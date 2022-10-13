@@ -1,0 +1,263 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+
+  background-color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-header {
+  font-weight: 700;
+}
+
+.main-navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.main-navigation-btn {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #756157;
+  border-radius: 4px;
+}
+
+.top-info {
+  background-image: url("../images/index/background_index.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.about-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.about-subtitle {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.advantage-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advantage-title--light {
+  color: #ffffff;
+}
+
+.advantage-description--light {
+  color: #ffffff;
+}
+
+.search-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.search-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.search-btn {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #756157;
+  border-radius: 4px;
+}
+
+.subscribe-with-background {
+  background-image: url("../images/index/background_subscribe.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.subscribe-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.subscribe-title--light {
+  color: #ffffff;
+}
+
+.subscribe-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.subscribe-description--light {
+  color: #ffffff;
+}
+
+.subscribe-input {
+  line-height: 24px;
+  color: #000000;
+
+  background-color: #ffffff;
+  opacity: 0.6;
+}
+
+.subscribe-btn {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #82B3D3;
+}
+
+.footer-contacts-phone {
+  font-style: normal;
+  font-size: 40px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.hotel-catalog-top {
+  background-image: url("../images/catalog/background_catalog.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.hotel-catalog-top {
+  color: #ffffff;
+}
+
+.hotel-catalog-top-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+}
+
+.filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.filter-label {
+  line-height: 23px;
+}
+
+.filter-submit-btn {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  background: #82B3D3;
+  border-radius: 4px;
+}
+
+.filter-reset-btn {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  background: transparent;
+}
+
+.hotel-catalog-result-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.card-btns {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  border-radius: 4px;
+}
+
+.card-more-btn {
+  background: #756157;
+}
+
+.card-favourites-btn {
+  background: #82B3D3;
+}
+
+.card-rating-block {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.pagination-link {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+}
