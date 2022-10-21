@@ -42,7 +42,7 @@ a {
   padding: 0;
 
   border: 0;
-  
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -369,6 +369,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 40px;
   padding: 0;
 
   list-style: none;
@@ -404,10 +405,9 @@ a {
   display: flex;
   padding-top: 40px;
 
-  border: 1px solid #E6E6E6;
+  border-top: 1px solid #E6E6E6;
 
   list-style: none;
-  background: #E6E6E6;
 }
 
 .pagination-item {
