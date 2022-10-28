@@ -50,6 +50,8 @@ a {
 }
 
 .btn {
+  display: inline-block;
+
   font-family: inherit;
   font-style: normal;
   font-size: 16px;
@@ -338,7 +340,7 @@ a {
 }
 
 .search {
-  padding: 96px 0 104px;
+  padding: 96px 0;
 }
 
 .search-title {
@@ -353,14 +355,14 @@ a {
 
 .search-description {
   width: 592px;
-  margin: 0 auto 62px;
+  margin: 0 auto 54px;
 
   font-size: 22px;
   line-height: 26px;
 }
 
 .search-btn {
-  padding: 13px 50px;
+  padding: 8px 50px;
 }
 
 .subscribe {
@@ -576,7 +578,8 @@ a {
   color: #000000;
 }
 
-.filter-submit-btn, .filter-reset-btn {
+.filter-submit-btn,
+.filter-reset-btn {
   margin-bottom: 32px;
   padding: 8px 50px;
 }
@@ -614,11 +617,14 @@ a {
 .sorting-select {
   width: 292px;
   margin-right: 70px;
-  padding: 11px 20px;
+  padding: 11px 14px;
 }
 
 .sorting-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  gap: 8px;
+  width: auto;
   margin: 0;
   padding: 0;
 
@@ -628,31 +634,25 @@ a {
 .sorting-item {
   width: 48px;
   height: 48px;
-  margin-right: 8px;
   box-sizing: border-box;
 
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
 
-.sorting-item:last-child {
-  margin-right: 0;
-}
-
 .card-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
+  width: auto;
   margin: 0;
-  padding: 0 0 20px 0;
+  padding: 0 0 36px 0;
 
   list-style: none;
 }
 
 .card-item {
   width: 340px;
-  margin-bottom: 18px;
   padding: 20px;
   box-sizing: border-box;
 
@@ -675,22 +675,25 @@ a {
   color: #000000;
 }
 
-.card-info, .card-btns {
+.card-info,
+.card-btns {
   display: flex;
   justify-content: space-between;
   margin-bottom: 16px;
 }
 
-.card-info-price-block{
+.card-info-price-block {
   margin: 0;
 }
 
-.card-more-btn, .card-favourites-btn {
+.card-more-btn,
+.card-favourites-btn {
   width: 140px;
   padding: 8px 18px;
 }
 
-.card-more-btn:hover, .card-favourites-btn:hover {
+.card-more-btn:hover,
+.card-favourites-btn:hover {
   background-color: #7DB54F;
 }
 
@@ -736,7 +739,10 @@ a {
 }
 
 .pagination-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 60px);
+  gap: 8px;
+  width: auto;
   margin: 0;
   padding: 40px 0 0 0;
 
@@ -747,16 +753,11 @@ a {
 
 .pagination-item {
   width: 60px;
-  margin-right: 8px;
   padding: 12px 19px;
   box-sizing: border-box;
 
   background-color: #82B3D3;
   border-radius: 4px;
-}
-
-.pagination-item:last-child {
-  margin-right: 0;
 }
 
 .pagination-link {
