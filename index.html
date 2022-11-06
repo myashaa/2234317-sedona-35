@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <div class="wrapper">
+    <div class="page-wrapper">
       <header class="page-header">
         <nav class="main-navigation">
           <a class="main-logo" href="index.html">
@@ -248,6 +248,86 @@
           </span>
         </a>
       </footer>
+    </div>
+    <div class="modal-wrapper hidden">
+      <div class="modal">
+        <button class="btn modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z"/>
+          </svg>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="search-group">
+              <label class="search-label" for="arrival-date">Дата заезда:</label>
+              <div class="search-input-wrapper">
+                <input class="input search-input" placeholder="Укажите дату" id="arrival-date" name="arrival-date" type="text">
+                <span class="search-message search-message--error">Мы не можем отправить вас в прошлое.</span>
+              </div>
+            </div>
+            <div class="search-group">
+              <label class="search-label" for="departure-date">Дата выезда:</label>
+              <div class="search-input-wrapper">
+                <input class="input search-input" placeholder="Укажите дату" id="departure-date" name="departure-date" type="text">
+                <span class="search-message">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
+            </div>
+            <div class="search-group">
+              <div class="search-group search-group--small">
+                <label class="search-label" for="adults">Взрослые:</label>
+                <button class="btn search-count-toggle-btn search-count-toggle-btn--decrease">
+                  <span class="visually-hidden">
+                    Уменьшить количество взрослых
+                  </span>
+                  <svg width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                  </svg>
+                </button>
+                <input class="input search-input" id="adults" name="adults" value="2" type="number">
+                <button class="btn search-count-toggle-btn search-count-toggle-btn--increase">
+                  <span class="visually-hidden">
+                    Увеличить количество взрослых
+                  </span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="search-group search-group--small">
+                <label class="search-label" for="children">
+                  Дети:
+                  <span class="search-tooltip-toggle-btn"></span>
+                  <span class="search-tooltip">
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  </span>
+                </label>
+                <button class="btn search-count-toggle-btn search-count-toggle-btn--decrease">
+                  <span class="visually-hidden">
+                    Уменьшить количество детей
+                  </span>
+                  <svg width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                  </svg>
+                </button>
+                <input class="input search-input" id="children" name="children" value="2" type="text">
+                <button class="btn search-count-toggle-btn search-count-toggle-btn--increase">
+                  <span class="visually-hidden">
+                    Увеличить количество детей
+                  </span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <button class="btn btn--primary search-btn" type="submit">
+              Найти
+            </button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 </html>
