@@ -33,11 +33,11 @@
         <nav class="main-navigation main-navigation-user">
           <ul class="main-navigation-list">
             <li class="main-navigation-item">
-              <a class="main-navigation-link main-navigation-link--search" href="#">
+              <button class="btn main-navigation-link main-navigation-link--search" type="button" onclick="document.querySelector('.modal-wrapper').classList.remove('modal-close');">
                 <span class="visually-hidden">
                   Поиск
                 </span>
-              </a>
+              </button>
             </li>
             <li class="main-navigation-item">
               <a class="main-navigation-link main-navigation-link--favourites" href="#">
@@ -249,9 +249,9 @@
         </a>
       </footer>
     </div>
-    <div class="modal-wrapper hidden">
+    <div class="modal-wrapper modal-close">
       <div class="modal">
-        <button class="btn modal-close-button">
+        <button class="btn modal-close-button" type="button" onclick="document.querySelector('.modal-wrapper').classList.add('modal-close');">
           <span class="visually-hidden">Закрыть</span>
           <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
             <path d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z"/>
@@ -277,7 +277,7 @@
             <div class="search-group">
               <div class="search-group search-group--small">
                 <label class="search-label" for="adults">Взрослые:</label>
-                <button class="btn search-count-toggle-btn search-count-toggle-btn--decrease">
+                <button class="btn search-count-toggle-btn search-count-toggle-btn--decrease" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">
                   <span class="visually-hidden">
                     Уменьшить количество взрослых
                   </span>
@@ -285,8 +285,8 @@
                     <path d="M0 0L0 2L14 2V0L0 0Z"/>
                   </svg>
                 </button>
-                <input class="input search-input" id="adults" name="adults" value="2" type="number">
-                <button class="btn search-count-toggle-btn search-count-toggle-btn--increase">
+                <input class="input search-input" id="adults" name="adults" min="0" max="9" value="2" type="number">
+                <button class="btn search-count-toggle-btn search-count-toggle-btn--increase" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">
                   <span class="visually-hidden">
                     Увеличить количество взрослых
                   </span>
@@ -303,7 +303,7 @@
                     Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                   </span>
                 </label>
-                <button class="btn search-count-toggle-btn search-count-toggle-btn--decrease">
+                <button class="btn search-count-toggle-btn search-count-toggle-btn--decrease" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">
                   <span class="visually-hidden">
                     Уменьшить количество детей
                   </span>
@@ -311,8 +311,8 @@
                     <path d="M0 0L0 2L14 2V0L0 0Z"/>
                   </svg>
                 </button>
-                <input class="input search-input" id="children" name="children" value="2" type="text">
-                <button class="btn search-count-toggle-btn search-count-toggle-btn--increase">
+                <input class="input search-input" id="children" name="children" min="0" max="9" value="2" type="number">
+                <button class="btn search-count-toggle-btn search-count-toggle-btn--increase" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">
                   <span class="visually-hidden">
                     Увеличить количество детей
                   </span>

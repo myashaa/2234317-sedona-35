@@ -45,10 +45,6 @@ input[type="number"]::-webkit-inner-spin-button {
   display: none;
 }
 
-.hidden {
-  display: none !important;
-}
-
 .visually-hidden {
   position: absolute;
 
@@ -314,7 +310,14 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 24px;
   color: #000000;
 
+  background-color: #ffffff;
   border-bottom: 2px solid #ffffff;
+}
+
+.main-navigation-link:hover,
+.main-navigation-link:focus,
+.main-navigation-link:active {
+  background-color: #ffffff;
 }
 
 .main-navigation-link--current {
@@ -1141,7 +1144,11 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 100%;
   height: 100%;
 
-  background-color: rgba(242, 242, 242, 0.8);;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal-close {
+  display: none;
 }
 
 .modal {
@@ -1220,6 +1227,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .search-input-wrapper {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1230,8 +1239,22 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 10px 17px 8px;
 
   font-weight: 700;
+}
 
-  border-radius: 0;
+.search-input:not(.search-group--small .search-input) {
+  border-radius: 4px;
+}
+
+.search-input-wrapper:not(.search-group--small .search-input)::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 22px;
+
+  width: 18px;
+  height: 17px;
+
+  background-image: url("../images/common/icon_date.svg");
 }
 
 .search-group--small .search-input {
@@ -1263,6 +1286,12 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .search-count-toggle-btn--decrease {
   margin-left: 46px;
+
+  border-radius: 4px 0 0 4px;
+}
+
+.search-count-toggle-btn--increase {
+  border-radius: 0 4px 4px 0;
 }
 
 .search-count-toggle-btn svg {
@@ -1296,6 +1325,7 @@ input[type="number"]::-webkit-inner-spin-button {
   top: 40px;
   right: -111px;
 
+  display: none;
   min-width: 256px;
   padding: 20px 18px 24px 21px;
   box-sizing: border-box;
@@ -1310,6 +1340,10 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: #333333;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+}
+
+.search-group--small:last-child .search-label:hover .search-tooltip {
+  display: block;
 }
 
 .search-tooltip::before {
