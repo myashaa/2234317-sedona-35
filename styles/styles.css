@@ -361,7 +361,7 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 51px 0 82px;
   box-sizing: border-box;
 
-  background-image: url("../images/index/background_index_bottom.png"), url("../images/index/background_index.jpg");
+  background-image: url("../images/index/background_index_bottom.svg"), url("../images/index/background_index.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -466,6 +466,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .advantage-title {
+  position: relative;
   width: 175px;
   margin: 0 auto 30px;
 
@@ -476,19 +477,30 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #000000;
 }
 
+.advantage-title:not(.about-item-home .advantage-title,
+  .about-item-food .advantage-title, .about-item-present .advantage-title) {
+  margin: 0 auto 62px;
+}
+
 .advantage--primary .advantage-title {
   color: #ffffff;
 }
 
-.advantage-decorative-line {
+.advantage-title:not(.about-item-home .advantage-title,
+  .about-item-food .advantage-title, .about-item-present .advantage-title)::before {
+  content: "";
+  position: absolute;
+  bottom: -32px;
+  left: 58px;
+
   width: 60px;
   height: 2px;
-  margin: 0 auto 30px;
 
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.advantage--primary .advantage-decorative-line {
+.advantage--primary .advantage-title:not(.about-item-home .advantage-title,
+  .about-item-food .advantage-title, .about-item-present .advantage-title)::before {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -809,6 +821,7 @@ input[type="number"]::-webkit-inner-spin-button {
   right: 20px;
 
   color: #000000;
+  opacity: 0.3;
 }
 
 .filter-scale {
@@ -1079,17 +1092,24 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 4px;
 }
 
-.pagination-link:not(.pagination-link--current):hover,
-.pagination-link:not(.pagination-link--current):focus {
+.pagination-link:not(.pagination-link--current, .pagination-link--hidden):hover,
+.pagination-link:not(.pagination-link--current, .pagination-link--hidden):focus {
   background-color: #68A2CA;
 }
 
-.pagination-link:not(.pagination-link--current):active {
+.pagination-link:not(.pagination-link--current, .pagination-link--hidden):active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.pagination-link--current {
+.pagination-link--current,
+.pagination-link--hidden {
   color: #000000;
+}
 
+.pagination-link--current {
   background-color: #F2F2F2;
+}
+
+.pagination-link--hidden {
+  background-color: transparent;
 }
