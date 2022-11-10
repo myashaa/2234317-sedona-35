@@ -35,11 +35,11 @@
         <nav class="main-navigation main-navigation-user">
           <ul class="main-navigation-list">
             <li class="main-navigation-item">
-              <button class="btn main-navigation-link main-navigation-link--search" type="button" onclick="document.querySelector('.modal-wrapper').classList.remove('modal-close');">
+              <a class="main-navigation-link main-navigation-link--search" href="#">
                 <span class="visually-hidden">
                   Поиск
                 </span>
-              </button>
+              </a>
             </li>
             <li class="main-navigation-item">
               <a class="main-navigation-link main-navigation-link--favourites" href="#">
@@ -173,9 +173,9 @@
           <p class="search-description">
             Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <a class="btn btn--secondary btn--bolded-text search-btn" href="catalog.html">
+          <button class="btn btn--secondary btn--bolded-text search-btn" type="button" onclick="document.querySelector('.modal-wrapper').classList.remove('modal-close');">
             Поиск гостиницы в седоне
-          </a>
+          </button>
         </section>
         <section class="subscribe subscribe-with-background">
           <h2 class="subscribe-title">

@@ -19,6 +19,7 @@ html {
 }
 
 body {
+  min-width: 1200px;
   margin: 0;
   padding: 0;
 
@@ -218,18 +219,6 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 50%;
 }
 
-.checkbox:hover,
-.checkbox:active,
-.radio:hover,
-.radio:active {
-  opacity: 0.3;
-}
-
-.checkbox:focus,
-.radio:focus {
-  border: 3px solid #83B3D3;
-}
-
 .page-wrapper {
   display: flex;
   flex-direction: column;
@@ -331,6 +320,15 @@ input[type="number"]::-webkit-inner-spin-button {
   border: none;
 }
 
+.main-navigation-user .main-navigation-link:hover,
+.main-navigation-user .main-navigation-link:active {
+  opacity: 0.6;
+}
+
+.main-navigation-user .main-navigation-link:focus {
+  opacity: 0.3;
+}
+
 .main-navigation-link--search,
 .main-navigation-link--favourites {
   background-repeat: no-repeat;
@@ -380,7 +378,7 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 51px 0 82px;
   box-sizing: border-box;
 
-  background-color: #ffffff;
+  background-color: #4b6268;
   background-image: url("../images/index/background_index_bottom.svg"), url("../images/index/background_index.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -561,7 +559,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .subscribe-with-background {
-  background-color: #ffffff;
+  background-color: #4b6268;
   background-image: url("../images/index/background_subscribe.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -694,7 +692,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
   color: #ffffff;
 
-  background-color: #ffffff;
+  background-color: #4b6268;
   background-image: url("../images/catalog/background_catalog.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -817,6 +815,18 @@ input[type="number"]::-webkit-inner-spin-button {
   z-index: -1;
 }
 
+.filter-checkbox:hover + .checkbox,
+.filter-checkbox:active + .checkbox,
+.filter-radio:hover + .radio,
+.filter-radio:active + .radio {
+  opacity: 0.3;
+}
+
+.filter-checkbox:focus + .checkbox,
+.filter-radio:focus + .radio {
+  border: 3px solid #83B3D3;
+}
+
 .filter-checkbox:checked + .checkbox {
   background-image: url("../images/common/checkbox.svg");
 }
@@ -910,6 +920,12 @@ input[type="number"]::-webkit-inner-spin-button {
 
   background-color: transparent;
   border: 3px solid transparent;
+}
+
+.filter-reset-btn:hover,
+.filter-reset-btn:focus,
+.filter-reset-btn:active {
+  background-color: transparent;
 }
 
 .filter-reset-btn:hover,
