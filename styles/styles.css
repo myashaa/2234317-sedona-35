@@ -308,6 +308,15 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: #ffffff;
 }
 
+.main-navigation-link:hover,
+.main-navigation-link:active {
+  opacity: 0.6;
+}
+
+.main-navigation-link:focus {
+  opacity: 0.3;
+}
+
 .main-navigation-link--current {
   border-bottom: 2px solid #756257;
 }
@@ -318,15 +327,6 @@ input[type="number"]::-webkit-inner-spin-button {
   height: 20px;
 
   border: none;
-}
-
-.main-navigation-user .main-navigation-link:hover,
-.main-navigation-user .main-navigation-link:active {
-  opacity: 0.6;
-}
-
-.main-navigation-user .main-navigation-link:focus {
-  opacity: 0.3;
 }
 
 .main-navigation-link--search,
